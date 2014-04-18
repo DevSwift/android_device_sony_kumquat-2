@@ -108,10 +108,6 @@ ifeq ($(MULTIMEDIA_SET_PLATFORM),l8540)
   LOCAL_CFLAGS    += -DADM_ENABLE_FEATURE_FAT_MODEM
   LOCAL_CFLAGS    += -DADM_SUPPORT_RC_FILTER
 endif
-ifeq ($(ONE_SHOT_MAKEFILE),)
-  ## Source files depend upon STE MM header files installed during STE MM build
-  $(addprefix $(LOCAL_PATH)/,$(LOCAL_SRC_FILES)): | st-ericsson-multimedia-package
-endif
 
 LOCAL_SHARED_LIBRARIES := \
         libcutils \
