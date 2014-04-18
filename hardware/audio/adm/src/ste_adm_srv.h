@@ -180,7 +180,7 @@
 #define INCLUSION_GUARD_STE_ADM_SRV_H_
 
 #include "ste_adm_msg.h"
-#include "OMX_Core.h"
+#include <OMX_Core.h>
 #include "ste_adm_omx_tool.h" // il_comp_t
 
 // The ADM main loop. Only returns if a fatal error occurs,
