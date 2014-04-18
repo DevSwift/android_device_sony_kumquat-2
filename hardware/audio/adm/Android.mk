@@ -136,6 +136,8 @@ LOCAL_SHARED_LIBRARIES += \
         libmmprobe
 endif
 
+MULTIMEDIA_PATH := $(LOCAL_PATH)/../../multimedia
+
 LOCAL_C_INCLUDES += \
         $(LOCAL_PATH)/include \
         $(LOCAL_PATH)/src/il_tool \
@@ -150,6 +152,7 @@ LOCAL_C_INCLUDES += \
         $(TOP)/external/libat/ \
         $(STE_MM_C_INCLUDES) \
         $(MULTIMEDIA_PATH)/audio/mmprobe/api \
+	$(MULTIMEDIA_PATH)/shared/ens_interface/omxil \
         $(APPS_PATH)/caif_socket_broker/lib \
         $(APPS_PATH)/caif_socket_broker/integration
 
